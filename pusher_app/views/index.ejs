@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pusher App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.4.0/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    
+    <script src="javascripts/main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pusher App[Voting App]</h1>
+        <p>vote for os</p>
+        <form id="vote-form">
+            <p>
+                <input type="radio" name="os" id="windows" value="windows" class="sd">
+                <label for="windows">Windows</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="mac" value="mac">
+                <label for="mac">Mac Os</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="linux" value="linux">
+                <label for="linux">Linux</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="other" value="other">
+                <label for="other">Other</label>
+            </p>
+            <input type="submit" name="submit" id="submit" value="vote" class="">
+        </form>
+        <br>
+        <div id="chartCotainer" style="height: 300px;width: 100%;"></div>
+    </div>
+</body>
+</html>
